@@ -104,19 +104,19 @@ class Day1 {
         System.out.println("x : " + x);
         System.out.println("y : " + y);
 
-        System.out.println("\n------ POST INCREMENT ------");
+        System.out.println("------ POST INCREMENT ------");
         int m = 5;
         int n = m++;
         System.out.println("m : " + m);
         System.out.println("n : " + n);
 
-        System.out.println("\n------ PRE DECREMENT ------");
+        System.out.println("------ PRE DECREMENT ------");
         int p = 5;
         int q = --p;
         System.out.println("p : " + p);
         System.out.println("q : " + q);
 
-        System.out.println("\n------ POST DECREMENT ------");
+        System.out.println("------ POST DECREMENT ------");
         int r = 5;
         int s = r--;
         System.out.println("r : " + r);
