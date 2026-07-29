@@ -96,7 +96,6 @@ class Day1 {
         System.out.println("Java Not Completed (!) : " + (!javaCompleted));
 
         System.out.println("------ INCREMENT & DECREMENT OPERATORS ------");
-
         System.out.println("------ PRE INCREMENT ------");
         int x = 5;
         int y = ++x;
