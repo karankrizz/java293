@@ -12,6 +12,7 @@ class Day1 {
         short passoutYear = 2023;
         long salary = 500000L;
         boolean workingStatus = false;
+
         System.out.println(msg);
         System.out.println("PERSONAL DETAILS");
         System.out.println("NAME: " + lastName + "." + firstName);
@@ -24,6 +25,7 @@ class Day1 {
         System.out.println("PASSOUT YEAR: " + passoutYear);
         System.out.println("Salary: " + salary);
         System.out.println("WORKING STATUS: " + (workingStatus ? "Currently Working" : "Looking for Opportunities"));
+       
         System.out.println("------------ FLOAT vs DOUBLE ------------");
         float fcheck = 1.123456789f;
         double dcheck = 1.123456789d;
