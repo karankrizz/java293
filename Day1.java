@@ -23,7 +23,7 @@ class Day1 {
         System.out.println("SKILLS: " + java.util.Arrays.toString(skills));
         System.out.println("EXPERIENCE: " + experience + " Years");
         System.out.println("PASSOUT YEAR: " + passoutYear);
-        System.out.println("Salary: " + salary);
+        System.out.println("EXPECTED SALARY: " + salary);
         System.out.println("WORKING STATUS: " + (workingStatus ? "Currently Working" : "Looking for Opportunities"));
        
         System.out.println("------------ FLOAT vs DOUBLE ------------");
