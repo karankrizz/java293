@@ -40,6 +40,21 @@ public class Day2 {
         System.out.println("Daily Salary   : " + dailySalary);
         System.out.println("Hourly Salary  : " + hourlySalary);
 
+        System.out.println("\n[5] SIMPLE INTEREST CALCULATOR");
+
+        double principal = 50000;
+        double rate = 8;
+        double numofyears = 3;
+
+        double simpleInterest = (principal * rate * numofyears) / 100;
+        double totalAmount = principal + simpleInterest;
+
+        System.out.println("\nPrincipal Amount : " + principal);
+        System.out.println("Interest Rate    : " + rate + "%");
+        System.out.println("Time             : " + numofyears + " years");
+        System.out.println("Simple Interest  : " + simpleInterest);
+        System.out.println("Total Amount     : " + totalAmount);
+
     }
 
 }
