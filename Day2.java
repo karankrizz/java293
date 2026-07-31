@@ -27,6 +27,19 @@ public class Day2 {
         System.out.println("Time     : " + time + " hours");
         System.out.println("Speed    : " + speed + " km/h");
 
+        System.out.println("\n[4] SALARY CALCULATOR");
+
+        double monthlySalary = 50000;
+
+        double yearlySalary = monthlySalary * 12;
+        double dailySalary = yearlySalary / 365;
+        double hourlySalary = dailySalary / 24;
+
+        System.out.println("\nMonthly Salary : " + monthlySalary);
+        System.out.println("Yearly Salary  : " + yearlySalary);
+        System.out.println("Daily Salary   : " + dailySalary);
+        System.out.println("Hourly Salary  : " + hourlySalary);
+
     }
 
 }
