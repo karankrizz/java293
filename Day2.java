@@ -16,6 +16,17 @@ public class Day2 {
         double miles = kiloMeter * 0.62137119;
         System.out.println("\nKilometers : " + kiloMeter + " km");
         System.out.println("Miles       : " + miles + " mi");
+
+        System.out.println("\n[3] SPEED, DISTANCE & TIME CALCULATOR");
+
+        double distance = 150;
+        double time = 3;
+        double speed = distance / time;
+
+        System.out.println("\nDistance : " + distance + " km");
+        System.out.println("Time     : " + time + " hours");
+        System.out.println("Speed    : " + speed + " km/h");
+
     }
 
 }
