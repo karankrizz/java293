@@ -91,13 +91,105 @@ public class Day2 {
                 System.out.println("Choose from (1,2,3,4,5)");
         }
         System.out.println("\n[7] VOWEL DETECTOR");
-        char letter= 'A';
-        char smallcase=Character.toLowerCase(letter);
-        if (smallcase=='a'||smallcase=='e'||smallcase=='i'||smallcase=='o'||smallcase=='u'){
-            System.out.println(letter+" is a vowel ");
-        }
-        else{
+        char letter = 'A';
+        char smallcase = Character.toLowerCase(letter);
+        if (smallcase == 'a' || smallcase == 'e' || smallcase == 'i' || smallcase == 'o' || smallcase == 'u') {
+            System.out.println(letter + " is a vowel ");
+        } else {
             System.out.println("Its a consonant letter");
+        }
+
+        System.out.println("\n[8] LEAP YEAR CHECKER");
+
+        int year = 2024;
+        if (year % 400 == 0) {
+            System.out.println("Leap Year");
+        } else if (year % 100 == 0) {
+            System.out.println("Not a Leap Year");
+        } else if (year % 4 == 0) {
+            System.out.println("Leap Year");
+        } else {
+            System.out.println("Not a Leap Year");
+        }
+        System.out.println("\n[9] EB BILL CALCULATOR");
+
+        int unitConsumed = 450;
+        double bill;
+
+        if (unitConsumed <= 200) {
+            bill = 0;
+        } else if (unitConsumed <= 400) {
+            bill = (unitConsumed - 200) * 4.70;
+        } else if (unitConsumed <= 500) {
+            bill = (200 * 4.70) + ((unitConsumed - 400) * 6.30);
+        } else {
+            System.out.println("This calculator supports only up to 500 units.");
+            return;
+        }
+
+        System.out.println("Units Consumed : " + unitConsumed);
+        System.out.println("EB Bill        : Rs." + bill);
+
+        System.out.println("\n[10] LARGEST OF 4 NUMBERS");
+
+        int number1 = 72;
+        int number2 = 45;
+        int number3 = 72;
+        int number4 = 31;
+
+        if (number1 == number2 && number2 == number3 && number3 == number4) {
+            System.out.println("All numbers are same");
+        } else if (number1 >= number2 && number1 >= number3 && number1 >= number4) {
+            System.out.println("Largest Number : " + number1);
+        } else if (number2 >= number1 && number2 >= number3 && number2 >= number4) {
+            System.out.println("Largest Number : " + number2);
+        } else if (number3 >= number1 && number3 >= number2 && number3 >= number4) {
+            System.out.println("Largest Number : " + number3);
+        } else {
+            System.out.println("Largest Number : " + number4);
+        }
+
+        System.out.println("\n[11] GRADING SYSTEM");
+
+        int mark = 78;
+
+        if (mark >= 91) {
+            System.out.println("Grade : A1");
+        } else if (mark >= 81) {
+            System.out.println("Grade : A2");
+        } else if (mark >= 71) {
+            System.out.println("Grade : B1");
+        } else if (mark >= 61) {
+            System.out.println("Grade : B2");
+        } else if (mark >= 51) {
+            System.out.println("Grade : C1");
+        } else if (mark >= 41) {
+            System.out.println("Grade : C2");
+        } else if (mark >= 35) {
+            System.out.println("Grade : D - Pass");
+        } else {
+            System.out.println("Grade : E - Fail");
+        }
+        System.out.println("\n[12] VOTING ELIGIBILITY");
+
+        String nationality = "Indian";
+        int age = 21;
+
+        if (nationality.equalsIgnoreCase("Indian")) {
+
+            if (age >= 18) {
+                System.out.println("Nationality : " + nationality);
+                System.out.println("Age         : " + age);
+                System.out.println("Result      : Eligible to Vote");
+            } else {
+                System.out.println("Nationality : " + nationality);
+                System.out.println("Age         : " + age);
+                System.out.println("Result      : Not Eligible - Age must be 18 or above");
+            }
+
+        } else {
+            System.out.println("Nationality : " + nationality);
+            System.out.println("Result      : Not Eligible - Indian citizens only");
         }
 
     }
