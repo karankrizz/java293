@@ -191,7 +191,14 @@ public class Day2 {
             System.out.println("Nationality : " + nationality);
             System.out.println("Result      : Not Eligible - Indian citizens only");
         }
+        System.out.println("\n[13] ADULT OR MINOR CHECK");
 
+        int ag_e = 21;
+
+        String result = ag_e >= 18 ? "Adult" : "Minor";
+
+        System.out.println("Age    : " + ag_e);
+        System.out.println("Result : " + result);
     }
 
 }
