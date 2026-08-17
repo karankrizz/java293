@@ -55,6 +55,42 @@ public class Day2 {
         System.out.println("Simple Interest  : " + simpleInterest);
         System.out.println("Total Amount     : " + totalAmount);
 
+        System.out.println("\n[5] AREA FORMULA");
+        String choice = "1";
+        switch (choice) {
+            case "1":
+                double side = 4;
+                double square = side * side;
+                System.out.println("AREA OF SQUARE: " + square);
+                break;
+            case "2":
+                double length = 4;
+                double breath = 8;
+                double rectangle = length * breath;
+                System.out.println("AREA OF RECTANGLE: " + rectangle);
+                break;
+            case "3":
+                double radius = 4;
+                double circle = (22.0 / 7.0) * radius * radius;
+                System.out.println("AREA OF CIRCLE: " + circle);
+                break;
+            case "4":
+                double base = 4;
+                double height = 8;
+                double triangle = 0.5 * base * height;
+                System.out.println("AREA OF TRIANGLE: " + triangle);
+                break;
+            case "5":
+                double parallelogramBase = 4;
+                double parallelogramHeight = 8;
+                double parallelogram = parallelogramBase * parallelogramHeight;
+                System.out.println("AREA OF PARALLELOGRAM: " + parallelogram);
+                break;
+
+            default:
+                System.out.println("Choose from (1,2,3,4,5)");
+        }
+
     }
 
 }
