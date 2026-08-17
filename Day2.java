@@ -55,7 +55,7 @@ public class Day2 {
         System.out.println("Simple Interest  : " + simpleInterest);
         System.out.println("Total Amount     : " + totalAmount);
 
-        System.out.println("\n[5] AREA FORMULA");
+        System.out.println("\n[6] AREA FORMULA");
         String choice = "1";
         switch (choice) {
             case "1":
@@ -89,6 +89,15 @@ public class Day2 {
 
             default:
                 System.out.println("Choose from (1,2,3,4,5)");
+        }
+        System.out.println("\n[7] VOWEL DETECTOR");
+        char letter= 'A';
+        char smallcase=Character.toLowerCase(letter);
+        if (smallcase=='a'||smallcase=='e'||smallcase=='i'||smallcase=='o'||smallcase=='u'){
+            System.out.println(letter+" is a vowel ");
+        }
+        else{
+            System.out.println("Its a consonant letter");
         }
 
     }
