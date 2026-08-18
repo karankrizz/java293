@@ -46,5 +46,15 @@ public class Day8 {
             }
         }
         System.out.println("Largest value: " + largest);
+
+        System.out.println("\n[7] FIND THE SMALLEST ARRAY VALUE ");
+        int[] svalues = { 90, 20, 500, 520, 450 };
+        int smallest = svalues[0];
+        for (int i = 0; i < svalues.length; i++) {
+            if (svalues[i] < smallest) {
+                smallest = svalues[i];
+            }
+        }
+        System.out.println("Smallest value: " + smallest);
     }
 }
