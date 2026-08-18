@@ -14,6 +14,12 @@ public class Day8 {
         for (int i = 0; i < marks.length; i++) {
             System.out.println(marks[i]);
         }
+        
+        System.out.println("\n[3] USING STRING DATA TYPE WITH ARRAY USING THE FOR LOOP ");
 
+        String[] names = { "kirubha", "karan", "R" };
+        for (int i = 0; i < names.length; i++) {
+            System.out.print(names[i] + " ");
+        }
     }
 }
