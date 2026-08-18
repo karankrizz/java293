@@ -75,5 +75,11 @@ public class Day8 {
                 System.out.println(number + " is a odd number");
             }
         }
+        System.out.println("\n[10] MATRIX 2D ARRAYS ");
+        int[][] twodarrays = { { 20, 25, 35, 65, 75 }, { 65, 35, 63, 54, 95 }, { 98, 56, 32, 14, 74 } };
+
+        System.out.println(twodarrays[0][0]);
+        System.out.println(twodarrays[1][1]);
+        System.out.println(twodarrays[2][2]);
     }
 }
