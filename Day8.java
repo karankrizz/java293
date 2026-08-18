@@ -81,5 +81,10 @@ public class Day8 {
         System.out.println(twodarrays[0][0]);
         System.out.println(twodarrays[1][1]);
         System.out.println(twodarrays[2][2]);
+
+        System.out.println("\n[11] CHANGE THE VALUES OF THE 2D ARRAYS ");
+        System.out.println("Before changed value for the twodarrays[2][0]: " + twodarrays[2][0]);
+        twodarrays[2][0] = 500;
+        System.out.println("After Changed value for the twodarrays[2][0]: " + twodarrays[2][0]);
     }
 }
