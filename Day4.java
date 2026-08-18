@@ -10,9 +10,7 @@ import java.util.Calendar;
 public class Day4 {
     public static void main(String[] args) {
 
-        System.out.println("========================================");
-        System.out.println("              DAY 4 TASKS               ");
-        System.out.println("========================================");
+
 
         System.out.println("\n[1] DATE");
 
@@ -73,5 +71,20 @@ public class Day4 {
         System.out.println("Year  : " + calendar.get(Calendar.YEAR));
         System.out.println("Month : " + (calendar.get(Calendar.MONTH) + 1));
         System.out.println("Day   : " + calendar.get(Calendar.DAY_OF_MONTH));
+
+        System.out.println("\n[9] CALENDAR ADD AND SET");
+
+        Calendar date = Calendar.getInstance();
+
+        System.out.println("Current Date : " + date.getTime());
+
+        date.add(Calendar.DAY_OF_MONTH, 10);
+        System.out.println("After 10 Days : " + date.getTime());
+
+        date.add(Calendar.DAY_OF_MONTH, -5);
+        System.out.println("After Minus 5 Days from aug 28 : " + date.getTime());
+
+        date.set(Calendar.YEAR, 2030);
+        System.out.println("After Setting Year : " + date.getTime());
     }
 }
