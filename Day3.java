@@ -72,6 +72,27 @@ public class Day3 {
         for (char letter = 'A'; letter <= 'Z'; letter++) {
             System.out.print(letter + " ");
         }
+        System.out.println("\n[8] BREAK");
+
+        for (int count = 1; count <= 10; count++) {
+
+            if (count == 5) {
+                break;
+            }
+
+            System.out.print(count + " ");
+        }
+
+        System.out.println("\n[9] CONTINUE");
+
+        for (int count = 1; count <= 10; count++) {
+
+            if (count == 5) {
+                continue;
+            }
+
+            System.out.print(count + " ");
+        }
     }
 
 }
