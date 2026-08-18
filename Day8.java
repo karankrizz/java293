@@ -56,5 +56,15 @@ public class Day8 {
             }
         }
         System.out.println("Smallest value: " + smallest);
+
+        System.out.println("\n[8] FIND THE EVEN AND THE ODD NUMBERS");
+        int[] numbers = { 1, 2, 7, 6, 5 };
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 0) {
+                System.out.println(numbers[i] + " is a even number");
+            } else {
+                System.out.println(numbers[i] + " is a odd number");
+            }
+        }
     }
 }
