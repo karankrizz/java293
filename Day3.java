@@ -25,6 +25,40 @@ public class Day3 {
             System.out.println("Number : " + number);
         }
 
+        System.out.println("\n[4] EVEN NUMBERS");
+
+        for (int number = 1; number <= 20; number++) {
+            if (number % 2 == 0) {
+                System.out.print(number + " ");
+            }
+        }
+
+        System.out.println("\n[5] ODD NUMBERS");
+
+        for (int number = 1; number <= 20; number++) {
+            if (number % 2 != 0) {
+                System.out.print(number + " ");
+            }
+        }
+
+        System.out.println("\n[6] PRIME NUMBERS");
+
+        for (int number = 2; number <= 20; number++) {
+
+            boolean prime = true;
+
+            for (int divisor = 2; divisor < number; divisor++) {
+                if (number % divisor == 0) {
+                    prime = false;
+                    break;
+                }
+            }
+
+            if (prime) {
+                System.out.print(number + " ");
+            }
+        }
+
     }
 
 }
