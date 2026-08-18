@@ -19,32 +19,32 @@ public class Day4 {
         Date currentDate = new Date();
         System.out.println("Current Date : " + currentDate);
 
-
         System.out.println("\n[2] LOCAL DATE");
 
         LocalDate today = LocalDate.now();
         System.out.println("Today : " + today);
-
 
         System.out.println("\n[3] LOCAL TIME");
 
         LocalTime currentTime = LocalTime.now();
         System.out.println("Current Time : " + currentTime);
 
-
         System.out.println("\n[4] LOCAL DATE TIME");
 
         LocalDateTime dateTime = LocalDateTime.now();
         System.out.println("Date & Time : " + dateTime);
 
-
         System.out.println("\n[5] DATE FORMATTER");
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-        String formattedDate = today.format(formatter);
+        LocalDate todayy = LocalDate.now();
 
-        System.out.println("Formatted Date : " + formattedDate);
+        DateTimeFormatter format1 = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        DateTimeFormatter format2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter format3 = DateTimeFormatter.ofPattern("dd MMMM yyyy");
 
+        System.out.println("Format 1 : " + todayy.format(format1));
+        System.out.println("Format 2 : " + todayy.format(format2));
+        System.out.println("Format 3 : " + todayy.format(format3));
 
         System.out.println("\n[6] PERIOD");
 
@@ -57,7 +57,6 @@ public class Day4 {
         System.out.println("Months : " + age.getMonths());
         System.out.println("Days   : " + age.getDays());
 
-
         System.out.println("\n[7] DURATION");
 
         LocalTime startTime = LocalTime.of(9, 0);
@@ -66,7 +65,6 @@ public class Day4 {
         Duration duration = Duration.between(startTime, endTime);
 
         System.out.println("Duration : " + duration.toHours() + " hours");
-
 
         System.out.println("\n[8] CALENDAR");
 
