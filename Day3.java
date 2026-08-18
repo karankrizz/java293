@@ -59,6 +59,11 @@ public class Day3 {
             }
         }
 
+        System.out.println("\n[7] PRINT A TO Z");
+
+        for (char letter = 'A'; letter <= 'Z'; letter++) {
+            System.out.print(letter + " ");
+        }
     }
 
 }
