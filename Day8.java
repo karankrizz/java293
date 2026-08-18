@@ -86,5 +86,13 @@ public class Day8 {
         System.out.println("Before changed value for the twodarrays[2][0]: " + twodarrays[2][0]);
         twodarrays[2][0] = 500;
         System.out.println("After Changed value for the twodarrays[2][0]: " + twodarrays[2][0]);
+
+        System.out.println("\n[12] USING THE FOR LOOP TO GET THE 2D ARRAY VALUES ");
+        for (int i = 0; i < twodarrays.length; i++) {
+            for (int j = 0; j < twodarrays[i].length; j++) {
+                System.out.print(twodarrays[i][j] + " ");
+            }
+            System.out.println(" ");
+        }
     }
 }
