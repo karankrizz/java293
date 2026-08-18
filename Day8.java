@@ -66,5 +66,14 @@ public class Day8 {
                 System.out.println(numbers[i] + " is a odd number");
             }
         }
+        System.out.println("\n[9] USING THE FOR EACH LOOP FOR THE NUMBERS");
+
+        for (int number : numbers) {
+            if (number % 2 == 0)
+                System.out.println(number + " is a even number");
+            else {
+                System.out.println(number + " is a odd number");
+            }
+        }
     }
 }
