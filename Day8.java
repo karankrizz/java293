@@ -32,10 +32,19 @@ public class Day8 {
         }
         System.out.println("Total sum of the values : " + sum);
 
-                System.out.println("\n[5] AVERAGE OF THE ARRAY VALUES");
+        System.out.println("\n[5] AVERAGE OF THE ARRAY VALUES");
 
         double average = (double) sum / values.length;
         System.out.println("Average of the total sum: " + average);
-        
+
+        System.out.println("\n[6] FIND THE LARGEST ARRAY VALUE ");
+        int[] valuess = { 90, 20, 500, 520, 450 };
+        int largest = valuess[0];
+        for (int i = 0; i < valuess.length; i++) {
+            if (valuess[i] > largest) {
+                largest = valuess[i];
+            }
+        }
+        System.out.println("Largest value: " + largest);
     }
 }
