@@ -31,5 +31,11 @@ public class Day8 {
             System.out.println("step :" + sum);
         }
         System.out.println("Total sum of the values : " + sum);
+
+                System.out.println("\n[5] AVERAGE OF THE ARRAY VALUES");
+
+        double average = (double) sum / values.length;
+        System.out.println("Average of the total sum: " + average);
+        
     }
 }
