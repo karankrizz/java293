@@ -21,41 +21,49 @@ public class Day3 {
 
         System.out.println("\n[3] FOR LOOP");
 
-        for (int number = 1; number <= 5; number++) {
-            System.out.println("Number : " + number);
+        for (int numbber = 1; numbber <= 5; numbber++) {
+            System.out.println("Number : " + numbber);
         }
 
         System.out.println("\n[4] EVEN NUMBERS");
 
-        for (int number = 1; number <= 20; number++) {
-            if (number % 2 == 0) {
-                System.out.print(number + " ");
+        for (int evenNumber = 0; evenNumber <= 100; evenNumber++) {
+            if (evenNumber % 2 == 0) {
+                System.out.print(evenNumber + " ");
+            }
+        }
+        System.out.println("\n[4] EVEN NUMBERS");
+
+        for (int evenNumber = 0; evenNumber <= 100; evenNumber++) {
+            if (evenNumber % 2 == 0) {
+                System.out.print(evenNumber + " ");
             }
         }
 
         System.out.println("\n[5] ODD NUMBERS");
 
-        for (int number = 1; number <= 20; number++) {
-            if (number % 2 != 0) {
-                System.out.print(number + " ");
+        for (int oddNumber = 0; oddNumber <= 100; oddNumber++) {
+            if (oddNumber % 2 != 0) {
+                System.out.print(oddNumber + " ");
             }
         }
 
         System.out.println("\n[6] PRIME NUMBERS");
 
-        for (int number = 2; number <= 20; number++) {
+        for (int primeNumber = 2; primeNumber <= 100; primeNumber++) {
 
-            boolean prime = true;
+            boolean isPrime = true;
 
-            for (int divisor = 2; divisor < number; divisor++) {
-                if (number % divisor == 0) {
-                    prime = false;
+            for (int divisor = 2; divisor < primeNumber; divisor++) {
+
+                if (primeNumber % divisor == 0) {
+                    isPrime = false;
                     break;
                 }
             }
 
-            if (prime) {
-                System.out.print(number + " ");
+            if (isPrime) {
+                System.out.print(primeNumber + " ");
             }
         }
 
