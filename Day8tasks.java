@@ -57,5 +57,27 @@ public class Day8tasks {
         System.out.println("Positive numbers count: " + positiveCount);
         System.out.println("Negative numbers count: " + negativeCount);
         System.out.println("Zero count: " + zeroCount);
+        System.out.println("\n[5] FIND THE SECOND LARGEST ARRAY VALUE");
+
+        int[] value = { 20, 27, 57, 60, 97, 23, 88, 55, 100 };
+
+        int largest = value[0];
+
+        for (int i = 1; i < value.length; i++) {
+            if (value[i] > largest) {
+                largest = value[i];
+            }
+        }
+
+        int secondLargest = value[0];
+
+        for (int i = 1; i < value.length; i++) {
+            if (value[i] > secondLargest && value[i] < largest) {
+                secondLargest = value[i];
+            }
+        }
+
+        System.out.println("Largest: " + largest);
+        System.out.println("Second largest: " + secondLargest);
     }
 }
