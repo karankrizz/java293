@@ -26,7 +26,7 @@ public class Day8tasks {
         int oddCount = 0;
 
         for (int i = 0; i < values.length; i++) {
-            if (numbers[i] % 2 == 0) {
+            if (values[i] % 2 == 0) {
                 evenCount++;
             } else {
                 oddCount++;
@@ -35,5 +35,27 @@ public class Day8tasks {
         }
         System.out.println("Even numbers count: " + evenCount);
         System.out.println("Odd numbers count: " + oddCount);
+
+        System.out.println("\n[4] FIND THE COUNT OF +VE AND -VE AND ZERO");
+        int[] number = { 20, -5, 0, 15, -10, 0, 25, -8 };
+
+        int positiveCount = 0;
+        int negativeCount = 0;
+        int zeroCount = 0;
+
+        for (int i = 0; i < number.length; i++) {
+
+            if (number[i] > 0) {
+                positiveCount++;
+            } else if (number[i] < 0) {
+                negativeCount++;
+            } else {
+                zeroCount++;
+            }
+        }
+
+        System.out.println("Positive numbers count: " + positiveCount);
+        System.out.println("Negative numbers count: " + negativeCount);
+        System.out.println("Zero count: " + zeroCount);
     }
 }
