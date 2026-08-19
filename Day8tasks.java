@@ -57,6 +57,7 @@ public class Day8tasks {
         System.out.println("Positive numbers count: " + positiveCount);
         System.out.println("Negative numbers count: " + negativeCount);
         System.out.println("Zero count: " + zeroCount);
+
         System.out.println("\n[5] FIND THE SECOND LARGEST ARRAY VALUE");
 
         int[] value = { 20, 27, 57, 60, 97, 23, 88, 55, 100 };
@@ -69,9 +70,9 @@ public class Day8tasks {
             }
         }
 
-        int secondLargest = value[0];
+        int secondLargest = Integer.MIN_VALUE;
 
-        for (int i = 1; i < value.length; i++) {
+        for (int i = 0; i < value.length; i++) {
             if (value[i] > secondLargest && value[i] < largest) {
                 secondLargest = value[i];
             }
@@ -79,5 +80,30 @@ public class Day8tasks {
 
         System.out.println("Largest: " + largest);
         System.out.println("Second largest: " + secondLargest);
+
+        System.out.println("\n[6] FIND THE SECOND SMALLEST ARRAY VALUE");
+        int[] valuess = { 20, 27, 57, 60, 97, 23, 88, 55, 100 };
+
+        int smallest = valuess[0];
+
+        for (int i = 1; i < valuess.length; i++) {
+            if (valuess[i] < smallest) {
+                smallest = valuess[i];
+            }
+        }
+
+        int secondSmallest = Integer.MAX_VALUE;
+
+        for (int i = 0; i < valuess.length; i++) {
+            if (valuess[i] < secondSmallest && valuess[i] > smallest) {
+                secondSmallest = valuess[i];
+            }
+        }
+
+        System.out.println("Smallest: " + smallest);
+        System.out.println("Second smallest: " + secondSmallest);
+        System.out.println("Smallest: " + smallest);
+        System.out.println("Second smallest: " + secondSmallest);
+
     }
 }
