@@ -59,21 +59,63 @@
 //     }
 // }
 
+//USING METHOD WITH A PARAMEETER VALUE
+// class Employee{
+//     void display(String name, int age){
+//         System.out.println("Employee Name : "+name);
+//         System.out.println("Employee Age : "+ age);
 
-class Employee{
-    void display(String name, int age){
-        System.out.println("Employee Name : "+name);
-        System.out.println("Employee Age : "+ age);
+//     }
+// }
+// class Main{
+//     public static void main(String[] args) {
+//         Employee e1=new Employee();
+//         e1.display("Suresh", 30);
+//         System.out.println("-----------");
+//         Employee e2=new Employee();
+//         e2.display("Ramesh", 28);
 
+//     }
+// }
+// PRACTICING USING THE RETURN TYPE 
+// class Calculator{
+//     int  add (int a,int b){
+//         return a+b;
+//     }
+// }
+// class Main{
+//     public static void main(String[] args) {
+//         Calculator c1=new Calculator();
+//         int Answer =c1.add(333, 444);
+//         System.out.println("Addition of two values : "+Answer);
+//     }
+// }
+
+// USING MULTIPLE METHODS 
+
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int sub(int a, int b) {
+        return a - b;
+    }
+
+    int divide(int a, int b) {
+        return a / b;
+    }
+
+    int mul(int a, int b) {
+        return a * b;
     }
 }
 class Main{
     public static void main(String[] args) {
-        Employee e1=new Employee();
-        e1.display("Suresh", 30);
-        System.out.println("-----------");
-        Employee e2=new Employee();
-        e2.display("Ramesh", 28);
-
+        Calculator c1=new Calculator();
+        System.out.println("Addition : "+ c1.add(5,6));
+        System.out.println("Subtraction : "+ c1.sub(5,6));
+        System.out.println("Division : "+ c1.divide(54,6));
+        System.out.println("Multiplication : "+ c1.mul(5,6));
     }
 }
