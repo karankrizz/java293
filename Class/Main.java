@@ -102,7 +102,7 @@ class Calculator {
         return a - b;
     }
 
-    int divide(int a, int b) {
+    double divide(double a, double b) {
         return a / b;
     }
 
@@ -115,7 +115,7 @@ class Main{
         Calculator c1=new Calculator();
         System.out.println("Addition : "+ c1.add(5,6));
         System.out.println("Subtraction : "+ c1.sub(5,6));
-        System.out.println("Division : "+ c1.divide(54,6));
+        System.out.println("Division : "+ c1.divide(5,6));
         System.out.println("Multiplication : "+ c1.mul(5,6));
     }
 }
