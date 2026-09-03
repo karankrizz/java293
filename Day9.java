@@ -39,5 +39,7 @@ public class Day9 {
         double division = a / b;
         System.out.println("divison of two numbers : " + division);
 
+        sc.close();
+
     }
 }
