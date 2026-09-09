@@ -1,5 +1,7 @@
 class Day1 {
     public static void main(String args[]) {
+        System.out.println("------------ DATATYPES ------------");
+        
         String msg = "Hello world";
         String firstName = "Kirubhakaran";
         char lastName = 'R';
