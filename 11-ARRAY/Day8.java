@@ -1,3 +1,4 @@
+package ARRAY;
 public class Day8 {
     public static void main(String args[]) {
         System.out.println("\n[1] BASIC METHOD ");

@@ -1,3 +1,5 @@
+package ARRAY;
+
 public class Day8tasks {
     public static void main(String args[]) {
         System.out.println("\n[1] REVERSE THE ARRAY");
